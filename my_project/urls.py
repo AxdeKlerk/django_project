@@ -20,7 +20,7 @@ from hello_world import views as index_views
 from about import views as about_views
 
 urlpatterns = [
-    path('hello/', index_views.index, name='index'),  # This line maps the root URL to the index view in hello_world app
+    path('', index_views.index, name='index'),  # This line maps the root URL to the index view in hello_world app
     path('about/', about_views.about_me, name='about'),  # This line includes the URLs from the about app
     path('admin/', admin.site.urls),
 ]
